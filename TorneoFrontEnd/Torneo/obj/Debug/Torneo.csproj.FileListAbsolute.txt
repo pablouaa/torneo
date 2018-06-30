@@ -1,1 +1,2 @@
 D:\repositorioGithub\torneo\TorneoFrontEnd\Torneo\bin\Debug\Torneo.exe.config
+C:\repositorioGit\torneo\TorneoFrontEnd\Torneo\bin\Debug\Torneo.exe.config
