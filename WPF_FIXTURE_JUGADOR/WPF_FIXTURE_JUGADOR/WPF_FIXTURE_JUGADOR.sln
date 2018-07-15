@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_FIXTURE_JUGADOR", "WPF_FIXTURE_JUGADOR\WPF_FIXTURE_JUGADOR.csproj", "{90F5EBE6-612E-4FFD-B282-136DAC99A30F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clases_Torneo", "..\..\WPF_Jugador\Clases_Torneo\Clases_Torneo.csproj", "{1E3E4A4E-FE23-45B4-92BC-AD5264F00F14}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clases_Torneo", "Clases_Torneo\Clases_Torneo.csproj", "{1E3E4A4E-FE23-45B4-92BC-AD5264F00F14}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
