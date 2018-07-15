@@ -1,0 +1,21 @@
+-- Table: public.jugador
+
+-- DROP TABLE public.jugador;
+
+CREATE TABLE public.jugador
+(
+  id_jugador bigint NOT NULL DEFAULT nextval('jugador_id_jugador_seq'::regclass),
+  nro_documento character varying(30) NOT NULL,
+  nombres character varying(200) NOT NULL,
+  apellidos character varying(200) NOT NULL,
+  url_imagen_perfil character varying(500),
+  total_tantos_convertidos integer,
+  fecha_nacimiento character varying(50),
+  CONSTRAINT jugador_pkey PRIMARY KEY (id_jugador),
+  CONSTRAINT unique_nro_documento UNIQUE (nro_documento)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.jugador
+  OWNER TO postgres;

@@ -1,0 +1,14 @@
+﻿<Window x:Class="WPF_FIXTURE_JUGADOR.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_FIXTURE_JUGADOR"
+        mc:Ignorable="d"
+        Title="Menu Principal" Height="350" Width="525">
+    <Grid>
+        <Button x:Name="btnJugador" Content="WPF JUGADOR" HorizontalAlignment="Left" Margin="78,116,0,0" VerticalAlignment="Top" Width="141" Height="77" Click="btnJugador_Click"/>
+        <Button x:Name="btnFixture" Content="WPF FIXTURE" HorizontalAlignment="Left" Margin="294,116,0,0" VerticalAlignment="Top" Width="141" Height="77" Click="btnFixture_Click"/>
+
+    </Grid>
+</Window>

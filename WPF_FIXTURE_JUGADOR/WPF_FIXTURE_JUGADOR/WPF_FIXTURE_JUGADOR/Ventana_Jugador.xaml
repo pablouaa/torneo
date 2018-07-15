@@ -1,0 +1,39 @@
+﻿<Window x:Class="WPF_FIXTURE_JUGADOR.Ventana_Jugador"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_FIXTURE_JUGADOR"
+        mc:Ignorable="d"
+       Title="Jugador" Height="584" Width="575.5" Loaded="Window_Loaded">
+    <Grid>
+        <StackPanel HorizontalAlignment="Left" Height="255" Margin="10,10,0,0" VerticalAlignment="Top" Width="279">
+            <Label x:Name="label1_Copy2" Content="Número de Documento"/>
+            <TextBox x:Name="txtDocumento" Height="23" TextWrapping="Wrap"/>
+            <Label x:Name="label" Content="Nombre"/>
+            <TextBox x:Name="txtNombre" Height="23" TextWrapping="Wrap"/>
+            <Label x:Name="label1" Content="Apellido" Margin="0,0,0.4,0"/>
+            <TextBox x:Name="txtApellido" Height="23" TextWrapping="Wrap"/>
+            <Label x:Name="label1_Copy" Content="Fecha de Nacimiento  dd/mm/aaaa" Margin="0,0,0.4,0"/>
+            <TextBox x:Name="txtFecha" Height="23" TextWrapping="Wrap"/>
+            <Label x:Name="label1_Copy1" Content="Goles " Margin="0,0,0.4,0"/>
+            <TextBox x:Name="txtGoles" Height="23" TextWrapping="Wrap"/>
+        </StackPanel>
+        <DataGrid x:Name="dgGrilla" HorizontalAlignment="Left" Margin="10,329,0,0" VerticalAlignment="Top" Height="210" Width="540" SelectionChanged="dgGrilla_SelectionChanged">
+            <!--<DataGrid.Columns>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Id"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Nro. Documento"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Nombre"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Apellido"/>
+            </DataGrid.Columns>-->
+        </DataGrid>
+
+        <Button x:Name="btnAgregar" Content="Agregar" HorizontalAlignment="Left" Margin="13,270,0,0" VerticalAlignment="Top" Width="111" Height="45" Click="btnAgregar_Click"/>
+        <Button x:Name="btnModificar" Content="Modificar" HorizontalAlignment="Left" Margin="155,270,0,0" VerticalAlignment="Top" Width="112" Height="45" Click="btnModificar_Click"/>
+        <Button x:Name="btnLimpiar" Content="Limpiar" HorizontalAlignment="Left" Margin="297,270,0,0" VerticalAlignment="Top" Width="112" Height="45" Click="btnLimpiar_Click"/>
+        <Button x:Name="btnEliminar" Content="Eliminar" HorizontalAlignment="Left" Margin="439,270,0,0" VerticalAlignment="Top" Width="111" Height="45" Click="btnEliminar_Click"/>
+        <Button x:Name="btnCambiarImagen" Content="Cambiar Imagen" HorizontalAlignment="Left" Margin="360,173,0,0" VerticalAlignment="Top" Width="170" Height="32" Click="btnCambiarImagen_Click"/>
+        <Image x:Name="imgFoto" HorizontalAlignment="Left" Height="158" Margin="360,15,0,0" VerticalAlignment="Top" Width="170"/>
+        <Button x:Name="btnBuscar" Content="Buscar Jugador" HorizontalAlignment="Left" Margin="360,218,0,0" VerticalAlignment="Top" Width="170" Height="36" Click="btnBuscar_Click"/>
+    </Grid>
+</Window>
